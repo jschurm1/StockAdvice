@@ -5,13 +5,13 @@ import base64
 
 
 class OpenAIWrapper:
-    def __init__(self, api_key="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"):
+    def __init__(self):
         """
 
         Args:
             api_key (str)
         """
-        self.api_key = api_key
+        self.api_key = api_key ="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"
         os.environ["OPENAI_API_KEY"] = self.api_key
         openai.api_key = api_key
         self.client = OpenAI()
